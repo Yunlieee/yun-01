@@ -37,7 +37,7 @@ header{
     text-align:center;
     color: #ffffff;
     position: absolute;
-    left: 34%;top: 38%;
+    left: 32.5%;top: 38%;
     font-size: 90px;
     font-family: 'Archivo Black', sans-serif;
 }
@@ -47,7 +47,7 @@ header{
     font-size: 40px;
     font-family: 'Archivo', sans-serif;
     position: absolute;
-    left: 41%;top: 52%;
+    left: 40%;top: 52.5%;
 }
 
 /* ===================================================== */
@@ -57,6 +57,7 @@ header{
     align-items: flex-end;
     margin: 200px 0 0 0 ;
     transform: translateX(-125px);
+    z-index: 99;
 }
 /* .page2 >div>p{
     opacity: 0.4;

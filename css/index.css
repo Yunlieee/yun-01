@@ -11,7 +11,6 @@ header{
     z-index: 99;
 }
 
-
 /* ==================================== main */
 main{
     background: url('../img/Main_background_pattern1.png') no-repeat left bottom;
@@ -39,13 +38,13 @@ main{
     font-family: 'Grey Qo', cursive;
     font-size: 150px;
     color: #ffffff;
-    margin-left: 690px;
+    margin-left: 122%;
 }
 .pg1 .font>b{
     font-family: 'Montserrat', sans-serif ;
     font-size: 190px;
     color: #ffffff;
-    margin-left: 600px;
+    margin-left: 105%;
 
 }
 
