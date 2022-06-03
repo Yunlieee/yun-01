@@ -4,20 +4,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Bakbak+One&family=Bebas+Neue&family=Buenard&family=Grey+Qo&family=Montserrat&family=Nunito+Sans:ital,wght@0,200;0,300;1,300&family=Playfair+Display:wght@400;500;600;700&family=Rubik&family=Sawarabi+Gothic&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Archivo:wght@400;500&family=Bakbak+One&family=Bebas+Neue&family=Buenard&family=Grey+Qo&family=Montserrat&family=Nunito+Sans:ital,wght@0,200;0,300;1,300&family=Playfair+Display:wght@400;500;600;700&family=Rubik&family=Sawarabi+Gothic&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Archivo:wght@400;500&family=Bakbak+One&family=Bebas+Neue&family=Buenard&family=Grey+Qo&family=Montserrat&family=Nunito+Sans:ital,wght@0,200;0,300;1,300&family=Playfair+Display:wght@400;500;600;700&family=Rubik&family=Sawarabi+Gothic&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Akshar&family=Archivo+Black&family=Archivo:wght@400;500&family=Bakbak+One&family=Bayon&family=Bebas+Neue&family=Buenard&family=Grey+Qo&family=Montserrat&family=Nunito+Sans:ital,wght@0,200;0,300;1,300&family=Playfair+Display:wght@400;500;600;700&family=Rubik&family=Sawarabi+Gothic&display=swap');
 *{box-sizing: border-box;
 padding: 0; margin: 0;}
 
 a{text-decoration: none;}
 ul,li{list-style-type: none;}
 html,body{margin: 0; padding: 0;}
+img{vertical-align: top;}
+
+
+
 
 .head{  
-    vertical-align: middle;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .head h1{    
-    position: absolute;
-    left: 5%; top: 1.2%;
 }
 .head h1>img{
     width: 120px;
@@ -25,50 +30,43 @@ html,body{margin: 0; padding: 0;}
 }
 
 .head>nav{
-    position: absolute;
-    width: 45%;
-    z-index: 99;
+    display: flex;
+    justify-content: space-between;
 }
 
 .head nav>ul{
     display: flex;
     justify-content: space-between;
-    align-content: space-between;
-    width: 100%;
-    margin-top: 75px;
-    margin-left:490px;
 }
 
 .head nav>ul>li{
-    display: flex;
-    width: 70%  ;
-    margin-left: 55px;
+    padding:0 30px;
 }
+
 .head nav>ul>li>a{
     color: #ffffff;
     font-family:'Montserrat', sans-serif; 
     font-size: 22px;
-
-
 }
-.head nav>ul>li>a:hover::after{
-    border-bottom: 2px solid #ffffff;
+
+.head nav>ul>li>a::after{
+    border-bottom: 2px solid transparent;
     width: 100%;
     content: '';
     display: block;
-
+}
+.head nav>ul>li:hover>a::after{
+    border-bottom: 2px solid #ffffff;
 }
 
 .head .icon{
-    margin-left: 1650px ;
-    display: flex;
-    justify-content: space-between;
-    width: 10%;
 }
 
 .head .icon>a{
-
+    padding-right: 20px;
 }
+
 .head .icon>a>img{
     width: 27px; height: 27px;
+
 }

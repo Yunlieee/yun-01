@@ -8,14 +8,14 @@
     <title>page_2</title>
     <link href="./css/project_page2.css" rel="stylesheet">
     <link href="./css/common.css" rel="stylesheet">
+    <link rel="icon" type="image/png" href="img/favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="img/favicon-16x16.png" sizes="16x16" />
 </head>
 
 <body>
-    <div class="header">
-        <p></p>
-    
-        <section class="head">
-            <h1><img src="./img/korea logo.png"></h1>
+    <header>
+        <section class= head>
+            <h1><img src="./img for coding/korea logo.png" alt="#"></h1>
             <nav>
                 <ul>
                     <li>
@@ -30,14 +30,16 @@
                     <li>
                         <a href="#">Events</a>
                     </li>
-                </ul>
-                <div class="icon">
-                    <a href="#"><img src="../img for coding/language_icon.png"></a>
-                    <a href="#"><img src="../img for coding/search_icon.png"></a>
-                </div>
+                </ul>                
             </nav>
+
+            <div class="icon">
+                <a href="#"><img src="./img for coding/language_icon.png" src="#"></a>
+                <a href="#"><img src="./img for coding/search_icon.png" src="#"></a>
+            </div>
         </section>
-    </div>
+    </header>
+
 
     <section class="page1">
         <p><img src="./img/Places to go_main.jpg"></p>
@@ -51,8 +53,10 @@
         <!-- <div>
             <p><img src="./img/Main_background_pattern1.png"></p>
         </div> -->  
-        <!-- 배경 패턴 어떻게 넣어요 ?!?!? -->
         <div class="circle">
+            <p class="active"></p>
+            <p></p>
+            <p></p>
             <p></p>
             <p></p>
             <p></p>
@@ -65,14 +69,14 @@
             <p class="active"><b>BUSAN</b></p>
             <p><b>JEJU</b></p>
             <p><b>INCHEON</b></p>
-            <p><b>CHUNGCHEONG</b></p>
+            <p class="sm"><b>CHUNGCHEONG</b></p>
             <p><b>JEOLLA-DO</b></p>
             <p><b>GANGWON</b></p>
-            <p><b>GYEONGSANG</b></p>
+            <p class="sm"><b>GYEONGSANG</b></p>
         </div>
 
         <article class="exp">
-            <p>Seoul is the capital of Korea and is the heart of Korea’s culture and education as well as politics
+            <p class="active">Seoul is the capital of Korea and is the heart of Korea’s culture and education as well as politics
                 and economy. Seoul is home to many historic sites and places of traditional culture. The shopping
                 and entertainment districts also draw a large number of tourists every year. The Hangang River,
                 which runs through the center of the city, is a distinctive landscape of Seoul that offers a myriad
@@ -111,53 +115,63 @@
     </section>
 
         <div class="imgs">
-            <div class="seoul">
-                <p><img src="./img/seoul_place.jpg"></p>
-                <p><img src="./img/seoul_place2.jpg"></p>
-                <p><img src="./img/seoul_place3.jpg"></p>
-                <p><img src="./img/seoul_place4.jpg"></p>
-                <p><img src="./img/seoul_place5.jpg"></p>
+            <div class="area active">
+                <div class="slide">
+                    <p><img src="./img/seoul_place.jpg"></p>
+                    <p><img src="./img/seoul_place2.jpg"></p>
+                    <p><img src="./img/seoul_place3.jpg"></p>
+                    <p><img src="./img/seoul_place4.jpg"></p>
+                    <p><img src="./img/seoul_place5.jpg"></p>
+                </div>
+                <div class="scroll">
+                    <p></p>
+                </div>
             </div>
-            <div class="busan">
-                <p><img src="./img/busan1.jpg"></p>
-                <p><img src="./img/busan2.jpg"></p>
-                <p><img src="./img/busan3.jpg"></p>
-                <p><img src="./img/busan4.jpg"></p>
-                <p><img src="./img/busan5.jpg"></p>
+            <div class="area busan">
+                <div class="slide">
+                    <p><img src="./img/busan1.jpg"></p>
+                    <p><img src="./img/busan2.jpg"></p>
+                    <p><img src="./img/busan3.jpg"></p>
+                    <p><img src="./img/busan4.jpg"></p>
+                    <p><img src="./img/busan5.jpg"></p>
+                </div>
+                <div class="scroll">
+                    <p></p>
+                </div>
             </div>
-            <div class="incheon">
+            <div class="area incheon">
                 <p><img src="./img/incheon1.jpg"></p>
                 <p><img src="./img/incheon2.jpg"></p>
                 <p><img src="./img/incheon3.jpg"></p>
                 <p><img src="./img/incheon4.jpg"></p>
                 <p><img src="./img/incheon5.jpg"></p>
             </div>
-            <div class="chungcheong">
+            <div class="area chungcheong">
                 <p><img src="./img/chungcheong.jpg"></p>
                 <p><img src="./img/chungcheong2.jpg"></p>
                 <p><img src="./img/chungcheong3.jpg"></p>
                 <p><img src="./img/chungcheong4.jpg"></p>
             </div>
-            <div class="jeolla-do">
+            <div class="area jeolla-do">
                 <p><img src="./img/jeollado.jpg"></p>
                 <p><img src="./img/jeollado2.jpg"></p>
                 <p><img src="./img/jeollado3.jpg"></p>
                 <p><img src="./img/jeollado4.jpg"></p>
             </div>
-            <div class="gangwon">
+            <div class="area gangwon">
                 <p><img src="./img/gangwon1.jpg"></p>
                 <p><img src="./img/gangwon2.jpg"></p>
                 <p><img src="./img/gangwon3.jpg"></p>
                 <p><img src="./img/gangwon4.jpg"></p>
             </div>
-            <div class="gyeongsang">
+            <div class="area gyeongsang">
                 <p><img src="./img/gyeongsangdo.jpg"></p>
                 <p><img src="./img/gyeongsangdo2.jpg"></p>
                 <p><img src="./img/gyeongsangdo3.jpg"></p>
                 <p><img src="./img/gyeongsangdo4.jpg"></p>
                 <p><img src="./img/gyeongsangdo5.jpg"></p>
             </div>
-            <div class="jeju">
+            <div class="area jeju">
                 <p><img src="./img/jeju_place.jpg"></p>
                 <p><img src="./img/Places to go_Jeju1.jpg"></p>
                 <p><img src="./img/Places to go_jeju2.jpg"></p>
@@ -166,9 +180,12 @@
             </div>
         </div>
 
-        <div class="scroll">
-            <p></p>
+        
+
+        <div class="button">
+            <a href="#"><img src="./img/bi_arrow-up.png" alt="#"></a>
         </div>
+    
 </body>
 
 <!-- ===================<Footer Here >===================== -->
