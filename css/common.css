@@ -14,12 +14,7 @@ html,body{margin: 0; padding: 0;}
 img{vertical-align: top;}
 
 
-header{
-    position: absolute;
-    left: 5%; top: 1.2%;
-    width:90%;
-    z-index: 99;
-}
+
 .head{  
     display: flex;
     justify-content: space-between;
