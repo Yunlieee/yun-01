@@ -24,7 +24,7 @@ img{vertical-align: top;}
 
 .head h1{    
 }
-.head h1>img{
+.head h1>a>img{
     width: 120px;
     height: 76px;
 }
