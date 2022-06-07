@@ -34,18 +34,17 @@ main{
 
 
 .pg1 .font>p{
-    margin-top: 280px;
+    margin-top: 300px;
     font-family: 'Grey Qo', cursive;
     font-size: 150px;
     color: #ffffff;
-    margin-left: 122%;
+    margin-left: 134%;
 }
 .pg1 .font>b{
     font-family: 'Montserrat', sans-serif ;
     font-size: 190px;
     color: #ffffff;
-    margin-left: 105%;
-
+    margin-left: 115%;
 }
 
 
@@ -53,7 +52,7 @@ main{
 
 .pg1 .left_btn{
     position: absolute;
-    left: 10%; top: 750px;
+    left: 10%; top: 800px;
     z-index: 97;
 }
 .pg1 .left_btn>a{
@@ -440,6 +439,7 @@ main{
     text-align: center;
     padding-top: 20px;
     margin-left: 285px;
+    margin: 0 auto;
 }
 
 .pg4 .blocks >li{    
