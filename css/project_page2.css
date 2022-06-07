@@ -19,8 +19,8 @@ header{
 }
 
 
-/* ====================================================== */ */
 
+/* ====================================================== */ */
 
 .page1{
     width: 100%;
@@ -37,7 +37,7 @@ header{
     text-align:center;
     color: #ffffff;
     position: absolute;
-    left: 32.5%;top: 38%;
+    left: 34%;top: 38%;
     font-size: 90px;
     font-family: 'Archivo Black', sans-serif;
 }
@@ -172,8 +172,9 @@ header{
     background-color: rgb(199, 199, 199);
     width: 50px; height: 50px;
     border-radius: 100%;
-    margin-left: 1620px;
+    margin-left: 90%;
     margin-bottom: 50px;
+    margin-top: 60px;
 }
 .button>a{
 }
@@ -186,7 +187,7 @@ header{
 .imgs{
     width: 100%; height: 500px;
     overflow: hidden;
-    margin-top: 50px;
+    margin-top: 150px;
 }
 .imgs .area{
     display: none;
