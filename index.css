@@ -257,8 +257,7 @@ main{
 .pg3 .city>li>a>p>img{
     z-index: 4; height:300px;
     width:100%;
-    box-shadow: 5px 5px 8px gray;
-    border-radius: 65px;
+    border-radius: 50px;
 }
 
 
