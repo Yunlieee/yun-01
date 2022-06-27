@@ -10,39 +10,24 @@
     <link href="./css/common.css" rel="stylesheet">
     <link rel="icon" type="image/png" href="img/favicon-32x32.png" sizes="32x32" />
     <link rel="icon" type="image/png" href="img/favicon-16x16.png" sizes="16x16" />
+    <script defer src="./js/common.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link
+    rel="stylesheet"
+    href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.3.1/css/swiper.min.css'><link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+
 </head>
 
 <body>
-    <header>
-        <section class= head>
-            <h1><a href="index.html"><img src="./img for coding/korea logo.png" alt="#"></a></h1>
-            <nav>
-                <ul>
-                    <li>
-                        <a href="project_page2.html">Places to Go</a>
-                    </li>
-                    <li>
-                        <a href="project_page3.html">Things to Do</a>
-                    </li>
-                    <li>
-                        <a href="project_page4.html">Plan Your Trip</a>
-                    </li>
-                    <li>
-                        <a href="project_page5.html">Events</a>
-                    </li>
-                </ul>                
-            </nav>
+    <header></header>
 
-            <div class="icon">
-                <a href="#"><img src="./img for coding/language_icon.png" src="#"></a>
-                <a href="#"><img src="./img for coding/search_icon.png" src="#"></a>
-            </div>
-        </section>
-    </header>
-
+<!-- =========================================== -->
 
     <section class="page1">
-        <p><img src="./img/Places to go_main.jpg"></p>
+        <p><img src="./img for coding/place to go main.jpg"></p>
         <h2>Places To Go</h2>
         <div>Destination by Regions</div>
     </section>
@@ -53,174 +38,250 @@
         <!-- <div>
             <p><img src="./img/Main_background_pattern1.png"></p>
         </div> -->  
-        <div class="circle">
-            <p></p>
-            <p></p>
-            <p class="active"></p>
-            <p></p>
-            <p></p>
-            <p></p>
-            <p></p>
-            <p></p>
-            <div></div>
+        <div class="circle-wrap">
+            <div class="circle">
+                <p class="active"></p>
+                <p></p>
+                <p></p>
+                <p></p>
+                <p></p>
+                <p></p>
+                <p></p>
+                <p></p>
+                <div></div>
+            </div>
         </div>
-        <div class="region">
-            <p><b>SEOUL</b></p>
-            <p class="active"><b>BUSAN</b></p>
-            <p><b>JEJU</b></p>
-            <p><b>INCHEON</b></p>
-            <p class="sm"><b>CHUNGCHEONG</b></p>
-            <p><b>JEOLLA-DO</b></p>
-            <p><b>GANGWON</b></p>
-            <p class="sm"><b>GYEONGSANG</b></p>
+        <div class="region mySwiper1">
+            <div class="swiper-wrapper">
+                <div class ="swiper-slide"><b>SEOUL</b></div>
+                <div class ="swiper-slide"><b>BUSAN</b></div>
+                <div class ="swiper-slide"><b>JEJU</b></div>
+                <div class ="swiper-slide"><b>INCHEON</b></div>
+                <div class ="swiper-slide small"><b>CHUNGCHEONG</b></div>
+                <div class ="swiper-slide"><b>JEOLLA</b></div>
+                <div class ="swiper-slide"><b>GANGWON</b></div>
+                <div class ="swiper-slide small"><b>GYEONGSANG</b></div>
+            </div>
         </div>
 
-        <article class="exp">
-            <p class="active">Seoul is the capital of Korea and is the heart of Korea’s culture and education as well as politics
-                and economy. Seoul is home to many historic sites and places of traditional culture. The shopping
-                and entertainment districts also draw a large number of tourists every year. The Hangang River,
-                which runs through the center of the city, is a distinctive landscape of Seoul that offers a myriad
-                of resting areas for citizens.</p>
-            <p>Busan is well-renown for its sight of Haeundae Beach against the high-rise buildings. The city also
-                offers a captivating evening scenery that brings bright building lights and night beaches into
-                harmony. The coastal vibe fills the atmosphere with trains running along the seaside,
-                hustle-and-bustle of traditional markets, and filming locations found all over the city.</p>
-            <p>Located in proximity to Seoul, attractions in Incheon, the gateway to Korea, and Gyeonggi-do are
-                excellent day trip destinations with much to show and offer. Discover Gyeonggi-do by visiting DMZ
-                tourist attractions in Paju, Everland in Yongin, and Hwaseong Fortress in Suwon, as well as Korea’s
-                UNESCO Heritages, mudflats, and Instagrammable cafés.</p>
-            <p>Chungcheong-do is in the central region of Korea, represented by cities like Gongju, known for many
-                historical sites, and Danyang with its mysterious caves. It’s a perfect destination to relax and
-                enjoy the peaceful scenery of the sunset on the west coast and inland lakes. The region also offers
-                diverse fun activities such as making traditional Korean liquor and the Boryeong Mud Festival.</p>
-            <p>Jeolla-do is represented by Jeonju, the home of hanok and bibimbap; Yeosu, the city of a beautiful
-                evening ocean; and Suncheon, an ecological treasure trove. Jeolla-do has earned its reputation as
-                Korea’s best gourmet city due to its fresh seafood, local agriculture cultivated from fertile land,
-                and the heartwarming generosity particular to the southern regions. The remarkable charms of the
-                southern archipelagos and Jirisan Mountain are also not to be missed.</p>
-            <p>Gangwon-do is blessed with peaceful vacation spots such as Nami Island in Chuncheon, beautiful
-                beaches in Gangneung, and a wide open ranch in Pyeongchang. In addition to refreshing beaches,
-                Gangwon-do is also home to prestigious mountains and a haven for leisure sports like surfing,
-                kayaking, skiing, and hiking.</p>
-            <p>Gyeongsang-do consists of attractive destinations like Gyeongju and Andong, where Korea’s traditions
-                live on, as well as the magnificent sceneries of the south coast and the charming islands of
-                Tongyeong and Geoje. Gyeongju is particularly recognized for its traditional buildings that blend in
-                beautifully with cherry blossom trees in spring. It’s a must-visit attraction for travelers seeking
-                to enjoy Korea’s traditional culture to the fullest.</p>
-            <p>Jeju-do is a volcanic island and the southernmost land of the Korean peninsula dotted with UNESCO
-                heritage sites. The island’s emerald beaches and fabulous coastlines, fascinating coastal cliffs and
-                prestigious forests that are thousands of years old, luxurious beach resorts, and the year-round
-                beauty of Hallasan Mountain all add up to make Jeju a perfect vacation destination.</p>
+
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+        <script>
+            var swiper1 = new Swiper(".mySwiper1", {
+                direction: "vertical",
+                slidesPerView:3,
+                centeredSlides: true,
+                mousewheel: true,
+                // loop: true,
+                spaceBetween: 15,  
+            });
+
+            swiper1.on('slideChange', function (param) {
+                let idx = param.realIndex;
+                $('.imgs').hide();
+                $('.imgs').eq(idx).show();
+                $('.exp div p').hide();
+                $('.exp div p').eq(idx).fadeIn(1000);
+                $('.circle').css({transform:`rotate(${45*idx}deg)`});
+                $('.circle p').removeClass('active');
+                $('.circle p').eq(idx).addClass('active');
+            });
+        </script>
+
+
+
+        <article class="exp mySwiper2">
+            <div>
+                <p class="active">
+                    Seoul is the capital of Korea and is the heart of Korea’s culture and education as well as politics
+                    and economy. Seoul is home to many historic sites and places of traditional culture. The shopping
+                    and entertainment districts also draw a large number of tourists every year. The Hangang River,
+                    which runs through the center of the city, is a distinctive landscape of Seoul that offers a myriad
+                    of resting areas for citizens.</p>
+                <p >Busan is well-renown for its sight of Haeundae Beach against the high-rise buildings. The city also
+                    offers a captivating evening scenery that brings bright building lights and night beaches into
+                    harmony. The coastal vibe fills the atmosphere with trains running along the seaside,
+                    hustle-and-bustle of traditional markets, and filming locations found all over the city.</p>
+                <p>Located in proximity to Seoul, attractions in Incheon, the gateway to Korea, and Gyeonggi-do are
+                    excellent day trip destinations with much to show and offer. Discover Gyeonggi-do by visiting DMZ
+                    tourist attractions in Paju, Everland in Yongin, and Hwaseong Fortress in Suwon, as well as Korea’s
+                    UNESCO Heritages, mudflats, and Instagrammable cafés.</p>
+                <p class="swiper-slide">Chungcheong-do is in the central region of Korea, represented by cities like Gongju, known for many
+                    historical sites, and Danyang with its mysterious caves. It’s a perfect destination to relax and
+                    enjoy the peaceful scenery of the sunset on the west coast and inland lakes. The region also offers
+                    diverse fun activities such as making traditional Korean liquor and the Boryeong Mud Festival.</p>
+                <p class="swiper-slide">Jeolla-do is represented by Jeonju, the home of hanok and bibimbap; Yeosu, the city of a beautiful
+                    evening ocean; and Suncheon, an ecological treasure trove. Jeolla-do has earned its reputation as
+                    Korea’s best gourmet city due to its fresh seafood, local agriculture cultivated from fertile land,
+                    and the heartwarming generosity particular to the southern regions. The remarkable charms of the
+                    southern archipelagos and Jirisan Mountain are also not to be missed.</p>
+                <p class="swiper-slide">Gangwon-do is blessed with peaceful vacation spots such as Nami Island in Chuncheon, beautiful
+                    beaches in Gangneung, and a wide open ranch in Pyeongchang. In addition to refreshing beaches,
+                    Gangwon-do is also home to prestigious mountains and a haven for leisure sports like surfing,
+                    kayaking, skiing, and hiking.</p>
+                <p class="swiper-slide">Gyeongsang-do consists of attractive destinations like Gyeongju and Andong, where Korea’s traditions
+                    live on, as well as the magnificent sceneries of the south coast and the charming islands of
+                    Tongyeong and Geoje. Gyeongju is particularly recognized for its traditional buildings that blend in
+                    beautifully with cherry blossom trees in spring. It’s a must-visit attraction for travelers seeking
+                    to enjoy Korea’s traditional culture to the fullest.</p>
+                <p class="swiper-slide">Jeju-do is a volcanic island and the southernmost land of the Korean peninsula dotted with UNESCO
+                    heritage sites. The island’s emerald beaches and fabulous coastlines, fascinating coastal cliffs and
+                    prestigious forests that are thousands of years old, luxurious beach resorts, and the year-round
+                    beauty of Hallasan Mountain all add up to make Jeju a perfect vacation destination.</p>
+            </div>
         </article>
     </section>
 
-        <div class="imgs">
-            <div class="area active">
-                <div class="slide">
-                    <p><img src="./img/seoul_place.jpg"></p>
-                    <p><img src="./img/seoul_place2.jpg"></p>
-                    <p><img src="./img/seoul_place3.jpg"></p>
-                    <p><img src="./img/seoul_place4.jpg"></p>
-                    <p><img src="./img/seoul_place5.jpg"></p>
-                </div>
-                <div class="scroll">
-                    <p></p>
-                </div>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+        // var swiper2 = new Swiper(".mySwiper2", {
+        //     direction: "vertical",
+        //     slidesPerView:5,    
+        //     centeredSlides: true,
+        //     mousewheel: true,
+        //     loop: false,
+        //     spaceBetween: 15,
+
+        // });
+
+        // swiper1.on('slideChange', function (param) {
+        //             console.log(param)
+        //             // realIndex, activeIndex
+        //             if(param.activeIndex == 1 || param.activeIndex == 10){
+        //                 // swiper2.slideTo(param.activeIndex, 0, false)
+                        
+        //             }else{
+        //             }
+        //             swiper2.slideTo(param.activeIndex, 1000, false)
+
+        //         });
+    </script>
+
+    <!-- seoul -->
+    <div class="imgs mySwiper3">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <p><img src="./img/seoul_place.jpg"></p>
             </div>
-            <div class="area busan">
-                <div class="slide">
-                    <p><img src="./img/busan1.jpg"></p>
-                    <p><img src="./img/busan2.jpg"></p>
-                    <p><img src="./img/busan3.jpg"></p>
-                    <p><img src="./img/busan4.jpg"></p>
-                    <p><img src="./img/busan5.jpg"></p>
-                </div>
-                <div class="scroll">
-                    <p></p>
-                </div>
+            <div class="swiper-slide">
+                <p><img src="./img/seoul_place2.jpg"></p>
             </div>
-            <div class="area incheon">
-                <p><img src="./img/incheon1.jpg"></p>
-                <p><img src="./img/incheon2.jpg"></p>
-                <p><img src="./img/incheon3.jpg"></p>
-                <p><img src="./img/incheon4.jpg"></p>
-                <p><img src="./img/incheon5.jpg"></p>
+            <div class="swiper-slide">
+                <p><img src="./img/seoul_place3.jpg"></p>
             </div>
-            <div class="area chungcheong">
+            <div class="swiper-slide">
+                <p><img src="./img/seoul_place4.jpg"></p>
+            </div>
+            <div class="swiper-slide">
+                <p><img src="./img/seoul_place5.jpg"></p>
+            </div>
+            
+        </div>
+            <!-- <div class="swiper-scrollbar"></div> -->
+
+        <div class="swiper-scrollbar"></div>
+    </div>
+            
+        
+<!-- slide hidden            
+
+            <div class="swiper-slide">
                 <p><img src="./img/chungcheong.jpg"></p>
                 <p><img src="./img/chungcheong2.jpg"></p>
                 <p><img src="./img/chungcheong3.jpg"></p>
                 <p><img src="./img/chungcheong4.jpg"></p>
             </div>
-            <div class="area jeolla-do">
+            <div class="swiper-scrollbar"></div>
+
+            <div class="swiper-slide">
                 <p><img src="./img/jeollado.jpg"></p>
                 <p><img src="./img/jeollado2.jpg"></p>
                 <p><img src="./img/jeollado3.jpg"></p>
                 <p><img src="./img/jeollado4.jpg"></p>
             </div>
-            <div class="area gangwon">
+            <div class="swiper-scrollbar"></div>
+
+            <div class="swiper-slide">
                 <p><img src="./img/gangwon1.jpg"></p>
                 <p><img src="./img/gangwon2.jpg"></p>
                 <p><img src="./img/gangwon3.jpg"></p>
                 <p><img src="./img/gangwon4.jpg"></p>
             </div>
-            <div class="area gyeongsang">
+            <div class="swiper-scrollbar"></div>
+
+            <div class="swiper-slide">
                 <p><img src="./img/gyeongsangdo.jpg"></p>
                 <p><img src="./img/gyeongsangdo2.jpg"></p>
                 <p><img src="./img/gyeongsangdo3.jpg"></p>
                 <p><img src="./img/gyeongsangdo4.jpg"></p>
                 <p><img src="./img/gyeongsangdo5.jpg"></p>
             </div>
-            <div class="area jeju">
+            <div class="swiper-scrollbar"></div>
+
+            <div class="swiper-slide">
                 <p><img src="./img/jeju_place.jpg"></p>
                 <p><img src="./img/Places to go_Jeju1.jpg"></p>
                 <p><img src="./img/Places to go_jeju2.jpg"></p>
                 <p><img src="./img/Places to go_jeju3.jpg"></p>
                 <p><img src="./img/Places to go_Jeju4.jpg"></p>
+            </div> -->
+            
+       
+
+    <!-- busan -->
+    <div class="imgs mySwiper4">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <p><img src="./img/busan1.jpg"></p>
+                <p><img src="./img/busan2.jpg"></p>
+                <p><img src="./img/busan3.jpg"></p>
+                <p><img src="./img/busan4.jpg"></p>
+                <p><img src="./img/busan5.jpg"></p>
             </div>
+            <!-- <div class="swiper-scrollbar"></div> -->
         </div>
+    </div>
 
-        
-
-        <div class="button">
-            <a href="#"><img src="./img/bi_arrow-up.png" alt="#"></a>
+    <!-- incheon -->
+    <div class="imgs mySwiper5">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <p><img src="./img/incheon1.jpg"></p>
+                <p><img src="./img/incheon2.jpg"></p>
+                <p><img src="./img/incheon3.jpg"></p>
+                <p><img src="./img/incheon4.jpg"></p>
+                <p><img src="./img/incheon5.jpg"></p>
+            </div>
+            <!-- <div class="swiper-scrollbar"></div> -->
         </div>
+    </div>
+
     
-</body>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script><script  src="./script.js"></script>
+
+    <script>
+        var swiper2 = new Swiper(".mySwiper3", {
+            slidesPerView: 4,
+            spaceBetween: 30,
+            mousewheel: true,
+            scrollbar: {
+                el: '.swiper-scrollbar',
+                draggable: true,
+            }
+        });
+
+    </script>
+
+    <div class="button">
+        <a href="#"><img src="./img/bi_arrow-up.png" alt="#"></a>
+    </div>
+    
+
 
 <!-- ===================<Footer Here >===================== -->
 
-    <footer class="footer">
-        <ul class="list">
-            <li>
-                <h2>Helpful Resources</h2>
-                <p>Promotion</p>
-                <p>KTO Mobile App</p>
-                <p>1330 Korea Travel Hotline</p>
-                <p>Digital Books / E-books</p>
-                <p>Photo Gallery</p>
-                <p>Reservations</p>
-            </li>
-            <li>
-                <h2>Services</h2>
-                <p>Terms of Service</p>
-                <p>FAQ</p>
-                <p>Privacy Policy</p>
-            </li>
-            <li>
-                <h2>Other Related Sites</h2>
-                <p>Visit Korea For Me</p>
-                <p>About KTO</p>
-                <p>K-Mice</p>
-            </li>
-        </ul>
-        <div class="sns">
-            <a href="#"><img src="./img/akar-icons_instagram-fill.png"></a>
-            <a href="#"><img src="./img/brandico_facebook.png"></a>
-            <a href="#"><img src="./img/simple-icons_kakaotalk.png"></a>
-            <a href="#"><img src="./img/bi_twitter.png"></a>
-        </div>
-    </footer>
-<!-- scroll question -->
-
-</html>
+    <footer></footer>
+    
+</body>
+</html> 

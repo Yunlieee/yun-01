@@ -13,7 +13,19 @@ ul,li{list-style-type: none;}
 html,body{margin: 0; padding: 0;}
 img{vertical-align: top;}
 
+header{
+    position: fixed;
+    left: 0; top: 0;
+    width:100%;
+    z-index: 99;
+    background: rgba(0,0,0,0.3);
+    padding: 1.2% 5%;
+}
 
+.head h1>a>img{
+    width: 120px;
+    height: 76px;
+}
 
 .head{  
     display: flex;
@@ -69,3 +81,48 @@ img{vertical-align: top;}
     width: 27px; height: 27px;
 
 }
+/* footer============================== */ 
+
+footer{
+    width: 100%;
+    height: 400px;
+    background-color: #E8EFF3;
+}
+footer .list{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    line-height: 1.4;
+}
+footer .list>li{
+    width: 35%;
+    margin-left: 200px;
+    margin-top: 70px;
+}
+footer .list>li>h2{
+    margin-bottom: 20px;
+    font-size: 20px;
+    font-family:  'Montserrat', sans-serif;
+}
+
+footer .list>li>h2::after{
+    content: '';
+    display: block;
+    width: 50%;
+    border-bottom: 2px solid #000;
+}
+footer .list>li>p{
+    font-size: 20px;
+    font-family:  'Montserrat', sans-serif;
+}
+
+/* ============================ */
+footer .sns{
+    width: 200px;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 77.5%;
+}
+footer .sns>a{
+}
+footer .sns>a>img{}

@@ -5,44 +5,23 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>page_4</title>
-    <link href="./css/common.css" rel="stylesheet">
+    <title>page_4-2</title>
+    <!-- <link href="./css/common.css" rel="stylesheet"> -->
     <link href="./css/project_page4.css" rel="stylesheet">
     <link rel="icon" type="image/png" href="img/favicon-32x32.png" sizes="32x32" />
     <link rel="icon" type="image/png" href="img/favicon-16x16.png" sizes="16x16" />
+    <link rel="stylesheet"
+    href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script defer src="./js/common.js"></script>
 </head>
 
 <body>
-    <header>
-        <section class= head>
-            <h1><a href="index.html"><img src="./img for coding/korea logo.png" alt="#"></a></h1>
-            <nav>
-                <ul>
-                    <li>
-                        <a href="project_page2.html">Places to Go</a>
-                    </li>
-                    <li>
-                        <a href="project_page3.html">Things to Do</a>
-                    </li>
-                    <li>
-                        <a href="project_page4.html">Plan Your Trip</a>
-                    </li>
-                    <li>
-                        <a href="project_page5.html">Events</a>
-                    </li>
-                </ul>                
-            </nav>
-
-            <div class="icon">
-                <a href="#"><img src="./img for coding/language_icon.png" src="#"></a>
-                <a href="#"><img src="./img for coding/search_icon.png" src="#"></a>
-            </div>
-        </section>
-    </header>
+    <header></header>
 <!-- =================================================== -->
     
     <section class="page1">
-        <p><img src="./img/Plan Your Trip_main.jpg"></p>
+        <p><img src="./img for coding/seoul map1.jpg"></p>
         <h2>Plan Your Trip</h2>
         <div>Transportations</div>
     </section>
@@ -88,36 +67,119 @@
                 </li>
             </ul>
 
-            <div class="img">
-                <div>
-                    <p><img src="./img/Plan your trip_subway.jpg" alt="#"></p>
-                    <b>SUBWAY</b>
+            <div class="swiper mySwiper3">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="./img for coding/Plan your trip_subway.png" alt="#">
+                        <b>• SUBWAY</b>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./img for coding/plan your trip_bus.png" alt="#">
+                        <b>• BUS</b>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./img for coding/Plan your trip_flights.png" alt="#">
+                        <b>• FLIGHTS</b>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./img for coding/plan your trip_taxis.png" alt="#">
+                        <b>• TAXI</b>
+                    </div>
                 </div>
-                <div>
-                    <p><img src="./img/plan your trip_bus.jpg" alt="#"></p>
-                    <b>BUS</b>
-                </div>
-                <div>
-                    <p><img src="./img/plan your trip_flights.jpg" alt="#"></p>
-                    <b>FLIGHTS</b>
-                </div>
-                <div>
-                    <p><img src="./img/plan your trip_taxis.jpg" alt="#"></p>
-                    <b>TAXI</b>
-                </div>
+                <div class="swiper-pagination"></div>
             </div>
-        </div>
-
-        <div class="dot">
-            <a href="#"></a>
-            <a href="#" class="active"></a>
-            <a href="#"></a>
-            <a href="#"></a>
-        </div>
-
-        
+            
     </section>
+    
+        <style>
 
+            .swiper{
+                margin: 100px auto;
+                width: 430px;
+                height: 290px;
+            }
+            .swiper .swiper-slide{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: #fff;
+                width: 250px;
+                position: relative;
+            }
+            .swiper .swiper-slide img{
+                width:100%; height: 100%;
+                border-radius: 50px;
+            }
+
+            .swiper b{
+                color: rgb(255, 255, 255);
+                font-size: 35px;
+                transform: translateX(-60px) rotate(90deg);
+                transform-origin: right bottom;
+                float: left;
+                position: absolute;
+                right: 3%; bottom:15%;
+                z-index: 99;
+            }
+
+            
+            /* ====================dots==================== */
+
+            .page2 .dot{
+                width:20%;
+                text-align: center;
+                margin-top: 30px;
+            }
+
+            .page2 .dot a{
+                width: 15px; height: 15px;
+                border-radius: 50%;
+                background-color: rgb(195, 195, 195);
+                margin: 0 5px;
+                z-index: 99;
+            }
+
+            .page2 .dot .a-active{
+                background-color: rgb(81, 81, 81);
+            }
+
+        </style>
+
+
+        <!-- /* ========script===================== */ -->
+
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+    <script src="./slick.min.js" type="text/javascript" charset="utf-8"></script>
+
+    <script>
+        var swiper3 = new Swiper(".mySwiper3", {
+            grabCursor: true,
+            effect: "creative",
+            creativeEffect: {
+                prev: {
+                    shadow: true,
+                    translate: ["-100%", 0, -1],
+                },
+                next: {
+                    translate: ["100%", 0, 0],
+                },
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                dynamicBullets: true,
+            },
+        });
+
+        swiper3.on('slideChange', function (pram) {
+            console.log(pram.realIndex);
+        });
+        
+    
+    </script>
+        
+<!-- offset 값을  translateY에 넣어주기   -->
 <!-- ========================================== -->
 
     <section class="page3">
@@ -191,37 +253,7 @@
 
     <!-- ===================<Footer Here >===================== -->
 
-        <footer class="footer">
-            <ul class="list">
-                <li>
-                    <h2>Helpful Resources</h2>
-                    <p>Promotion</p>
-                    <p>KTO Mobile App</p>
-                    <p>1330 Korea Travel Hotline</p>
-                    <p>Digital Books / E-books</p>
-                    <p>Photo Gallery</p>
-                    <p>Reservations</p>
-                </li>
-                <li>
-                    <h2>Services</h2>
-                    <p>Terms of Service</p>
-                    <p>FAQ</p>
-                    <p>Privacy Policy</p>
-                </li>
-                <li>
-                    <h2>Other Related Sites</h2>
-                    <p>Visit Korea For Me</p>
-                    <p>About KTO</p>
-                    <p>K-Mice</p>
-                </li>
-            </ul>
-            <div class="sns">
-                <a href="#"><img src="./img/akar-icons_instagram-fill.png"></a>
-                <a href="#"><img src="./img/brandico_facebook.png"></a>
-                <a href="#"><img src="./img/simple-icons_kakaotalk.png"></a>
-                <a href="#"><img src="./img/bi_twitter.png"></a>
-            </div>
-        </footer>
+        <footer></footer>
     
     </body>
     

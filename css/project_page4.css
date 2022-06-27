@@ -52,15 +52,17 @@ header{
     display: flex;
     justify-content: space-between;
     position: relative;
-    width: 70%;
+    width: 80%;
     margin: 120px auto;
-    height: 400px;
+    height: 390px;
     overflow: hidden;
 }
 
 .page2 .trans .port{
-    margin: 0px;    
+    margin: 0 auto;    
     width: 40%;
+    vertical-align: middle;
+    transform: translateY(-470px);
 }
 
 .page2 .trans .port>li{
@@ -69,7 +71,7 @@ header{
 .page2 .trans .port>li>h2{
     font-size: 50px;
     padding-bottom: 30px;
-    margin-top: 50px;
+    margin-top: 100px;
     font-family: 'Archivo', sans-serif;
 }
 
@@ -80,85 +82,39 @@ header{
     line-height: 1.2;
 }
 
+.page2 .trans .swiper > b{
 
-/* ====================================== */
-.page2 .trans .img{
-    display: flex;
-    justify-content: space-between;
-    width: 45%;
 }
 
 
-.page2 .trans .img>div{
-    position: absolute;
-    right:20%; top: 12%;
-    box-shadow: 10px 10px 10px rgb(128, 128, 128);
-    border-radius: 50px;
-}
-
-/* ====================================*/
-.page2 .trans .img>div:nth-of-type(1){}
-.page2 .trans .img>div:nth-of-type(2){
-    transform: translateX(15%);
-}
-.page2 .trans .img>div:nth-of-type(3){
-    transform: translateX(30%);
-}
-.page2 .trans .img>div:nth-of-type(4){
-    transform: translateX(50%);
-}
-
-
-/* ======================================== */
-
-.page2 .trans .img>div>p{
-    width: 428px;
-}
-
-.page2 .trans .img>div>p>img{
-    border-radius: 50px;
-    width: 428px;
-}
-
-.page2 .trans .img>div>b{
-    color: rgb(255, 255, 255);
-    font-size: 40px;
-    transform: translateX(-60px) rotate(90deg);
-    transform-origin: right bottom;
-    float: left;
-    position: absolute;
-    right: 3%; bottom:15%;
-    }
-
-/* ================================== */
+/* ==========dot ============================== */
 
 .page2 .dot{
     display: flex;
     justify-content: space-between;
     width: 8%;
     position: absolute;
-    left: 61%; top: 145%;
+    left: 61%; top: 155%;
 }
-.page2 .dot .active{
-    background-color: #383838;
-}
-.page2 .dot>a{
+
+.page2 .dot>p{
     background-color: rgb(195, 195, 195);
     width: 15px; height: 15px;
     border-radius: 50%;
     margin: 0 5px;
 }
 
+
 /* ====================================== */
 .page3{
     overflow: hidden;
-    margin-top: 200px;
+    margin-top: 250px;
 }
 
 .page3>h2{
     font-size: 50px;
     font-family: 'Archivo', sans-serif;
-    width: 70%;
+    width: 75%;
     margin-left: 14.5%;
     padding-bottom: 70px;
 }
@@ -263,46 +219,3 @@ header{
 
 /* footer ==================================== */
 
-.footer{
-    width: 100%;
-    height: 400px;
-    background-color: #E8EFF3;
-}
-.footer .list{
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    line-height: 1.4;
-}
-.footer .list>li{
-    width: 35%;
-    margin-left: 200px;
-    margin-top: 70px;
-}
-.footer .list>li>h2{
-    margin-bottom: 20px;
-    font-size: 20px;
-    font-family:  'Montserrat', sans-serif;
-}
-
-.footer .list>li>h2::after{
-    content: '';
-    display: block;
-    width: 50%;
-    border-bottom: 2px solid #000;
-}
-.footer .list>li>p{
-    font-size: 20px;
-    font-family:  'Montserrat', sans-serif;
-}
-
-/* ============================ */
-.footer .sns{
-    width: 200px;
-    display: flex;
-    justify-content: space-between;
-    margin-left: 77.5%;
-}
-.footer .sns>a{
-}
-.footer .sns>a>img{}

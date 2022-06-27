@@ -6,10 +6,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Project_main</title>
-    <link href="./css/common.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <link href="./css/index.css" rel="stylesheet">
     <link rel="icon" type="image/png" href="img/favicon-32x32.png" sizes="32x32" />
     <link rel="icon" type="image/png" href="img/favicon-16x16.png" sizes="16x16" />
+    <link
+    rel="stylesheet"
+    href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.3.1/css/swiper.min.css'><link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.2/css/swiper.min.css'><link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
@@ -25,7 +32,7 @@
                         <a href="project_page3.html">Things to Do</a>
                     </li>
                     <li>
-                        <a href="project_page4.html">Plan Your Trip</a>
+                        <a href="project_page4_2.html">Plan Your Trip</a>
                     </li>
                     <li>
                         <a href="project_page5.html">Events</a>
@@ -49,93 +56,217 @@
                 <p>Dynamic</p>
                 <b>Korea</b>
             </div>
-            <div class="bg">
-                <p><img src="./img for coding/Main page_main1.jpg" src="#"></p>
-                <!-- <p><img src="#">이미지2</p>
-                <p><img src="#">이미지3</p> -->
+            <div class="swiper mySwiper1">
+                <div class="bg swiper-wrapper">
+                    <p class="swiper-slide"><img src="./img for coding/Main page_main1.jpg" src="#"></p>
+                    <p class="swiper-slide"><img src="./img for coding/korea main2 .jpg" src="#"></p>
+                    <p class="swiper-slide"><img src="./img for coding/korea main3 .jpg" src="#"></p>
+                </div>
+                <div class="swiper-pagination"></div>
+                <!-- <div class="btn">
+                    <a class="active"></a>
+                    <a></a>
+                    <a></a>
+                </div> -->
             </div>
-            <div class="left_btn">
-                <a href="#">
-                    <p></p>
-                </a>
-                <a href="#">
-                    <p></p>
-                </a>
-                <a href="#">
-                    <p></p>
-                </a>
-            </div>
+            
+            
+            <style>
+                .swiper .swiper-pagination{
+                    position: absolute;
+                    left: 0; top: 90%; 
+                }
+                .swiper .swiper-pagination-bullet {
+                    width: 20px;
+                    height: 20px;
+                    opacity: 1;
+                    background: rgba(247, 245, 245);
+                    z-index: 99;
+                    margin: 0 10px !important;
+                }
+                .swiper .swiper-pagination-bullet-active {
+                    border: 2px solid #ffffff;
+                    opacity: 0.5;
+                }
+
+            </style>
         </section>
         
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script><script  src="./script.js"></script>
+
+        <script>
+            var swiper = new Swiper(".mySwiper1", {
+                slidesPerView: 1,
+                spaceBetween: 0,
+                mousewheel: false,
+                pagination: {
+                    el: ".swiper-pagination",
+                    clickable: true,
+                },
+            });
+
+        </script>
+
         <!-- page2 -->
+        
         <section class="pg2">
             <div class="fl">
                 <h2>DESTINATIONS BY REGION</h2>
 
-                <div class="flex">
+                <!-- <div class="flex">
                     <div class="scroll">
                         <p></p>
                     </div>
-                
-                    <div class="region">
-                        <div>
-                            <p><b>Seoul</b></p>
-                            <p class="active"><b>Incheon</b></p>
-                            <p><b>Busan</b></p>
-                            <p><b>Gangwon</b></p>
-                            <p><b>Jeju</b></p>
-                            <p><b>Chungcheong</b></p>
-                            <p><b>Gyeongsang</b></p>
-                            <p><b>Jeolla-do</b></p>
+                -->
+                    <div class="region mySwiper2">
+                        <div class="swiper-wrapper">
+                            <div class ="swiper-slide"><b>Seoul</b></div>
+                            <div class ="swiper-slide"><b class='active'>Busan</b></div>
+                            <div class ="swiper-slide"><b>Incheon</b></div>
+                            <div class ="swiper-slide"><b>Gangwon</b></div>
+                            <div class ="swiper-slide"><b>Jeju</b></div>
+                            <div class ="swiper-slide small"><b>Chungcheong</b></div>
+                            <div class ="swiper-slide small"><b>Gyeongsang</b></div>
+                            <div class ="swiper-slide"><b>Jeolla</b></div> 
                         </div>
+
+                        <div class="swiper-scrollbar"></div>
                     </div>
                 </div>
-            </div>
+                <!-- <div class="swiper-pagination"></div> -->
+            
+            </div> 
 
-            <div class="img">
-                <ul class="card">
-                    <li>
-                        <a href="#"><img src="./img/Seoul_destination.png" alt="#"></a>
+            <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+            <script>
+                var swiper1 = new Swiper(".mySwiper2", {
+                    direction: "vertical",
+                    slidesPerView:3,
+                    centeredSlides: true,
+                    mousewheel: true,
+                    loop: true,
+                    spaceBetween: 25,
+                    scrollbar: {
+                        el: '.swiper-scrollbar',
+                        draggable: true,
+                    }
+                });
+
+                swiper1.on('slideChange', function (param) {
+                    console.log(param)
+                    // realIndex, activeIndex
+                    if(param.activeIndex == 3 || param.activeIndex == 10){
+                        // swiper2.slideTo(param.activeIndex, 0, false)
+                        
+                    }else{
+                    }
+                    swiper2.slideTo(param.activeIndex, 1000, false)
+
+                });
+            </script>
+
+
+            <div class="img mySwiper3">
+                <ul class="card swiper-wrapper">
+
+                    <li class="swiper-slide">
+                        <a href="project_page2.html">
+                            <img src="./img/Seoul_destination.png" alt="#"></a>
                         <h2> Seoul</h2>
                         <span>The Capital Region of<br> South Korea</span>
                     </li>
-                    <li>
-                        <a href="#"><img src="./img/destin_busan.png" alt="#"></a>
+                    
+                    <li class="swiper-slide">
+                        <a href="project_page2.html">
+                            <img src="./img/destin_busan.png" alt="#"></a>
                         <h2> Busan</h2>
                         <span>Korea's largest port city</span>
                     </li>
-                    <li>
-                        <a href="#"><img src="./img/destin_incheon.jpg" alt="#"></a>
-                        <h2> Incheon & Gyeonggi-do</h2>
+
+                    <li class="swiper-slide">
+                        <a href="project_page2.html">
+                            <img src="./img/destin_incheon.jpg" alt="#"></a>
+                        <h2> Incheon</h2>
                         <span>Home to a Large Variety<br> of Destinations</span>
                     </li>
-                    <li>
-                        <a href="#"><img src="./img/destin_gangwon.jpg" alt="#"></a>
-                        <h2> Gangwon-do</h2>
+
+                    <li class="swiper-slide">
+                        <a href="project_page2.html">
+                            <img src="./img/destin_gangwon.jpg" alt="#"></a>
+                        <h2> Gangwon</h2>
                         <span>Seoul, the capital region of <br>South Korea</span>
                     </li>
-                    <li>
-                        <a href="#"><img src="./img/destin_jeju.jpg" alt="#"></a>
+
+                    <li class="swiper-slide">
+                        <a href="project_page2.html">
+                            <img src="./img/destin_jeju.jpg" alt="#"></a>
                         <h2> Jeju</h2>
                         <span>A premier Destination, Boasting Mild Weather and Sceneric Beauties</span>
                     </li>
-                    <li>
-                        <a href="#"><img src="./img/destin_chung.jpg" alt="#"></a>
-                        <h2> Chungcheong<br>-do</h2>
+
+                    <li class="swiper-slide">
+                        <a href="project_page2.html">
+                            <img src="./img/destin_chung.jpg" alt="#"></a>
+                        <h2> Chungcheong</h2>
                         <span>Vital Transportation Hub Connecting from Seoul to Southern Region</span>
                     </li>
-                    <li>
-                        <a href="#"><img src="./img/destin_gyenongsans.jpg" alt="#"></a>
-                        <h2> Gyeongsang<br>-do</h2>
+
+                    <li class="swiper-slide">
+                        <a href="project_page2.html">
+                            <img src="./img/destin_gyenongsans.jpg" alt="#"></a>
+                        <h2> Gyeongsang</h2>
                         <span>A Must-Visit Attraction for Travelers Seeking to Enjoy Korea’s Traditional Culture</span>
                     </li>
-                    <li>
-                        <a href="#"><img src="./img/destin_jeolla.png" alt="#"></a>
-                        <h2> Jeolla-do</h2>
+
+                    <li class="swiper-slide">
+                        <a href="project_page2.html">
+                            <img src="./img/destin_jeolla.png" alt="#"></a>
+                        <h2> Jeolla</h2>
                         <span>Bountiful in Traditional Cultural Heritages and Historical Sites</span>
                     </li>
+
                 </ul>
             </div>
+  
+
+            <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+            <script>
+
+                var swiper2 = new Swiper(".mySwiper3", {
+                    direction: "horizontal",
+                    slidesPerView:3,
+                    centeredSlides: true,
+                    mousewheel: true,
+                    loop: true,
+                    spaceBetween: 30,
+
+                });
+
+                swiper2.on('slideChange', function (param) {
+                    if(param.activeIndex == 3 || param.activeIndex == 10){
+                        // swiper2.slideTo(param.activeIndex, 0, false)
+                    }else{
+                    }
+                    swiper1.slideTo(param.activeIndex, 1000, false)
+
+                });
+
+                // var swiper = new Swiper(".mySwiper3", {
+                //     slidesPerView: 3,
+                //     pagination: {
+                //         el: ".swiper-pagination",
+                //     },
+                // });
+                
+                // var swiper = new Swiper(".mySwiper3", {
+                //     slidesPerView: "auto",
+                //     centeredSlides: true,
+                //     pagination: {
+                //     el: ".swiper-pagination",
+                //     },
+                // });
+            </script>
 
         </section>
         
@@ -151,7 +282,7 @@
             <ul class="city">
                 <li class="active">
                     <a href="#">
-                        <p><img src="./img/Main_news_Pohang.jpg" alt="#"></p>
+                        <p><img src="./img for coding/Main_news_Pohang.jpg" alt="#"></p>
                         <span><b>Korea's Best 5 Oceans in Fall</b> </span> 
                     </a>
                     <div class="tag"><b>New</b></div>
@@ -187,7 +318,7 @@
             </ul>
 
             <div>
-                <a href="#"><b>Explore More</b></a>
+                <a href="project_page2.html"><b>Explore More</b></a>
             </div>
         </section>
         <!-- page4 ==========================================================-->
@@ -229,48 +360,94 @@
         <section class="pg5">
             <h2>STORIES OF KOREA</h2>
             <div class="grp">
-                <div class="arrow">
+                <!-- <div class="arrow">
                     <a href="#">
                         <p><img src="./img/arrow.png" alt="#"></p>
                         <p><img src="./img/arrow2.png" alt="#"></p>
                     </a>
-                </div>
+                </div> -->
 
-                <ul class="rotate">
-                    <li>
-                        <p><img src="./img/Rectangle 185.jpg" src="#"></p>
-                        <span>
-                            <b>[Korea] BORAHAEGAS,BTS<br> takes over Las Vegas!</b>
-                            <a href="#">more</a>
-                        </span>
-                    </li>
-                    <li class="active">
-                        <p><img src="./img/Rectangle 187.jpg" src="#"></p>
-                        <span>
-                            <b>Explore the Beauty of Top 7<br>Fall Foliage Destinations in Seoul!</b>
-                            <a href="#">more</a>
-                        </span>
-                    </li>
-                    <li>
-                        <p><img src="./img/Rectangle 189.jpg" src="#"></p>
-                        <span>
-                            <b>Guide to Summer Festivals<br>(June-August)</b>
-                            <a href="#">more</a>
-                        </span>
-                    </li>
-                </ul>
+                <div class="swiper-container" id="ka-swiper1">
+                    <ul class="rotate swiper-wrapper">
+                        <li class="swiper-slide">
+                            <p><img src="./img/Rectangle 185.jpg" src="#"></p>
+                            <span>
+                                <b>[Korea] BORAHAEGAS,BTS<br> takes over Las Vegas!</b>
+                                <a href="#">View more</a>
+                            </span>
+                        </li>
+                        <li class="swiper-slide">
+                            <p><img src="./img/Rectangle 187.jpg" src="#"></p>
+                            <span>
+                                <b>Explore the Beauty of Top 7<br>Fall Foliage Destinations in Seoul!</b>
+                                <a href="#">View more</a>
+                            </span>
+                        </li>
+                        <li class="swiper-slide active">
+                            <p><img src="./img/Rectangle 189.jpg" src="#"></p>
+                            <span>
+                                <b>Guide to Summer Festivals<br>(June-August)</b>
+                                <a href="#">View more</a>
+                            </span>
+                        </li>
+                        <li class="swiper-slide">
+                            <p><img src="./img/Rectangle 185.jpg" src="#"></p>
+                            <span>
+                                <b>[Korea] BORAHAEGAS,BTS<br> takes over Las Vegas!</b>
+                                <a href="#">View more</a>
+                            </span>
+                        </li>                       
+                            <li class="swiper-slide">
+                            <p><img src="./img/Rectangle 187.jpg" src="#"></p>
+                            <span>
+                                <b>Explore the Beauty of Top 7<br>Fall Foliage Destinations in Seoul!</b>
+                                <a href="#">View more</a>
+                            </span>
+                        </li>
+                        <li class="swiper-slide">
+                            <p><img src="./img/Rectangle 185.jpg" src="#"></p>
+                            <span>
+                                <b>Guide to Summer Festivals<br>(June-August)</b>
+                                <a href="#">View more</a>
+                            </span>
+                        </li>  
+                    </ul>
+                </div>
             </div>
         
             <div class="button">
                 <a href="#"><img src="./img/bi_arrow-up.png" alt="#"></a>
             </div>
-            
+
+            <script src='https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.2/js/swiper.min.js'></script><script  src="./script.js"></script>
+
+            <script>
+                var swiper = new Swiper(".swiper-container", {
+                            effect: "coverflow",
+                            grabCursor: true,
+                            centeredSlides: true,
+                            slidesPerView: "auto",
+                            mousewheel: true,
+                            spaceBetween: 50,
+                            initialSlide:3,
+
+                            coverflowEffect: {
+                                rotate: 20,
+                                stretch: 0,
+                                depth: 100,
+                                modifier: 1,
+                                slideShadows: false
+                            },
+
+                });
+            </script>
+
         </section>
     </main>
     <!-- ======================================================== -->
 
         <div class="button">
-            <a href="#"><img src="./img/bi_arrow-up.png" alt="#"></a>
+            <a href="index.html"><img src="./img/bi_arrow-up.png" alt="#"></a>
         </div>
 
     <!-- ===================<Footer Here >===================== -->
