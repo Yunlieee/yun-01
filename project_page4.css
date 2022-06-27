@@ -1,0 +1,221 @@
+@import url('./common.css');
+
+.body{
+    position: relative;
+    width: 100%;
+}
+
+header{
+    position: fixed;
+    left: 0; top: 0;
+    width:100%;
+    z-index: 99;
+    background: rgba(0,0,0,0.3);
+    padding: 1.2% 5%;
+}
+
+.head h1>a>img{
+    width: 120px;
+    height: 76px;
+}
+
+/* ================================================== */
+.page1{
+}
+.page1>p{}
+.page1>p>img{
+    width: 100%;
+}
+.page1>h2{
+    text-align:center;
+    color: #ffffff;
+    font-size: 90px;
+    font-family: 'Archivo Black', sans-serif;
+    position: absolute;
+    left: 33%;top: 36%;
+}
+.page1>div{
+    color: #ffffff;
+    text-align: center;
+    font-size: 40px;
+    font-family: 'Archivo', sans-serif;
+    position: absolute;
+    left: 43%;top: 49%;
+    margin-top: 20px;
+}
+
+/* ================================== */
+
+.page2{
+}
+.page2 .trans{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    width: 80%;
+    margin: 120px auto;
+    height: 390px;
+    overflow: hidden;
+}
+
+.page2 .trans .port{
+    margin: 0 auto;    
+    width: 40%;
+    vertical-align: middle;
+    transform: translateY(-470px);
+}
+
+.page2 .trans .port>li{
+}
+
+.page2 .trans .port>li>h2{
+    font-size: 50px;
+    padding-bottom: 30px;
+    margin-top: 100px;
+    font-family: 'Archivo', sans-serif;
+}
+
+.page2 .trans .port>li>p{
+    font-size: 24px;
+    padding-bottom: 30px;
+    font-family: 'Archivo', sans-serif;
+    line-height: 1.2;
+}
+
+.page2 .trans .swiper > b{
+
+}
+
+
+/* ==========dot ============================== */
+
+.page2 .dot{
+    display: flex;
+    justify-content: space-between;
+    width: 8%;
+    position: absolute;
+    left: 61%; top: 155%;
+}
+
+.page2 .dot>p{
+    background-color: rgb(195, 195, 195);
+    width: 15px; height: 15px;
+    border-radius: 50%;
+    margin: 0 5px;
+}
+
+
+/* ====================================== */
+.page3{
+    overflow: hidden;
+    margin-top: 250px;
+}
+
+.page3>h2{
+    font-size: 50px;
+    font-family: 'Archivo', sans-serif;
+    width: 75%;
+    margin-left: 14.5%;
+    padding-bottom: 70px;
+}
+
+
+.page3 .fare{
+    width: 100%;
+    font-size: 16px;
+    font-family: 'Archivo', sans-serif;
+    line-height: 1.1;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+/* border-radius: 0 50px 50px 0px; */
+
+/* ===================================== */
+
+.page3 .fare>li{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    vertical-align: middle;
+    margin-bottom: 50px;
+    overflow: hidden;
+    border-radius: 50px;
+}
+
+.page3 .fare>li:nth-of-type(1){
+    width: 60%;
+}
+
+.page3 .fare>li:nth-of-type(2){
+    width: 36%;
+}
+
+.page3 .fare>li:nth-of-type(3){
+    width: 45%;
+
+}
+.page3 .fare>li:nth-of-type(4){
+    width: 51%;
+}
+.page3 .fare>li:nth-of-type(5){
+    width: 60%;
+}
+
+
+
+/* ============================================    */
+
+.page3 .fare>li>b{
+    font-size: 32px;
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+    position: absolute;
+    left: 10%; top: 12%;
+}
+.page3 .fare>li:nth-of-type(3)>b{
+    color: rgb(146, 146, 146);
+}
+
+.page3 .fare>li:nth-of-type(odd){
+    border-radius: 0 50px 50px 0 ;
+}
+.page3 .fare>li:nth-of-type(even){
+    border-radius: 50px 0 0 50px ;
+}
+
+/* =========================================== */
+
+.page3 .fare>li>span{
+    position: absolute;
+    left: 40%; top: 0%;
+    color: #383838;
+    line-height: 1.5;
+    background: #eee;
+    width: 60%; height: 100%;
+    padding: 55px 20px 50px 50px;
+
+}
+.page3 .fare>li>span{opacity:0; transition: .5s;}
+.page3 .fare>li:hover>span{opacity:1}
+
+/* =============================================== */
+
+.page3 .button{
+    background-color: rgb(205, 205, 205);
+    width: 50px; height: 50px;
+    border-radius: 100%;
+    margin-left: 93%;
+    margin-bottom: 50px;
+
+}
+.page3 .button>a{
+}
+.page3 .button>a>img{
+    padding: 13px;
+    width: 100%;
+}
+
+/* footer ==================================== */
+

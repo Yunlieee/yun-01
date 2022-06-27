@@ -1,0 +1,193 @@
+@import url('./common.css');
+
+.body{
+    position: relative;
+    width: 100%;
+}
+
+/* ================================================== */
+
+.page1{
+    
+}
+.page1>p{
+    }
+.page1>p>img{
+    width: 100%;
+}
+.page1>h2{
+    text-align:center;
+    color: #ffffff;
+    position: absolute;
+    left: 34%;top: 38%;
+    font-size: 90px;
+    font-family: 'Archivo Black', sans-serif;
+}
+.page1>div{
+    color: #ffffff;
+    text-align: center;
+    font-size: 40px;
+    font-family: 'Archivo', sans-serif;
+    position: absolute;
+    left: 40%;top: 52%;
+    margin-top: 20px;
+}
+
+/* ===================================================== */
+
+.page_2{
+    background: 
+        url('../img for coding/event_background_pattern.png') right top/ 35% no-repeat, 
+        url('../img/Main_background_pattern1.png') left bottom / 20% no-repeat;
+}
+.page_2 .upper{
+    display: flex;
+    justify-content: space-between;
+    width: 75%;
+    position: relative;
+    margin: 250px auto;
+}
+.page_2 .upper .left{
+    position: relative;
+}
+.page_2 .upper .left>p{
+    width: 30%;
+    position: absolute;
+}
+
+.page_2 .upper .left>p:nth-of-type(1){}
+.page_2 .upper .left>p:nth-of-type(2){   
+    transform: translateX(100px);}
+.page_2 .upper .left>p:nth-of-type(3){
+    transform: translateX(200px);
+}
+
+.page_2 .upper .left>p>img{
+    width: 400px;
+    border-radius: 60px;
+    position: absolute;
+    left: 0; top: 0;
+}
+
+/* ========================================= */
+
+.page_2 .upper .letter{
+    width: 45%;
+    margin-top: 40px;
+}
+
+.page_2 .upper .letter>h2{
+    font-size: 30px;
+    font-family: 'Archivo Black', sans-serif;
+    margin-bottom: 60px;
+}
+.page_2 .upper .letter>span{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+}
+
+/* ================================== */
+
+.page_2 .dot{
+    margin-top: 30px;
+    display: flex;
+    position: absolute;
+    left: 54.5%; top: 100%;
+}
+
+.page_2 .dot a{
+    background-color: rgb(199, 199, 199);
+    width: 15px; height: 15px;
+    border-radius: 50%;
+    margin: 0 10px;
+}
+
+.page_2 .dot a.active{
+    background-color: rgb(81, 81, 81);
+}
+/* ============================================== */
+
+
+.page_2 .under{
+    display: flex;
+    width: 75%;
+    position: relative;
+    margin: 250px auto;
+}
+.page_2 .under .right{
+}
+.page_2 .under .right>p{
+    width: 25%;
+}
+
+.page_2 .under .right>p:nth-of-type(1){
+    transform: translateX(100px);
+}
+.page_2 .under .right>p:nth-of-type(2){
+    transform: translateX(200px);
+}   
+.page_2 .under .right>p:nth-of-type(3){
+    transform: translateX(300px);
+
+}
+
+.page_2 .under .right>p>img{
+    width: 400px;
+    border-radius: 60px;
+    position: absolute;
+}
+
+.page_2 .under .letter2{
+    width: 45%;
+    margin-top: 40px;
+}
+
+.page_2 .under .letter2>h2{
+    font-size: 30px;
+    margin-bottom: 60px;
+    font-family: 'Archivo Black', sans-serif;
+}
+
+.page_2 .under .letter2>span{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    width: 60%;
+}
+
+/* ================================================== */
+
+.page_2 .dot2{
+    display: flex;
+    position: absolute;
+    left: 12%; top: 195%;
+}
+
+.page_2 .dot2 a{
+    background-color: rgb(199, 199, 199);
+    width: 15px; height: 15px;
+    border-radius: 50%;
+    margin: 0 10px;
+}
+
+.page_2 .dot2 a.active{
+    background-color: rgb(81, 81, 81);
+}
+/* ============================================ */
+
+.page_2 .upper .letter{order: 2;}
+.page_2 .under .right{order: 1;}
+
+/* ================================= */
+.page_2 .button{
+    background-color: rgb(199, 199, 199);
+    width: 50px; height: 50px;
+    border-radius: 100%;
+    margin-left: 90%;
+    margin-top: 150px;
+}
+.page_2 .button>a{}
+.page_2 .button>a>img{
+    padding: 13px;
+    width: 100%;
+}
+

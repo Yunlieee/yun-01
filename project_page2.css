@@ -1,0 +1,251 @@
+@import url('./common.css');
+
+.body{
+    position: relative;
+    width: 100%;
+}
+
+
+/* ====================================================== */ */
+
+.page1{
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 150px;
+}
+.page1>p{
+    position: relative;
+}
+.page1>p>img{
+    width: 100%;
+    height: 100%;
+}
+.page1>h2{
+    text-align:center;
+    color: #ffffff;
+    position: absolute;
+    left: 34%;top: 38%;
+    font-size: 90px;
+    font-family: 'Archivo Black', sans-serif;
+}
+.page1>div{
+    color: #ffffff;
+    text-align: center;
+    font-size: 40px;
+    font-family: 'Archivo', sans-serif;
+    position: absolute;
+    left: 40%;top: 52.5%;
+}
+
+/* ===================================================== */
+
+.page2{
+    display: flex;
+    align-items: flex-end;
+    margin: 200px 0 0 0 ;
+    transform: translateX(-125px);
+    z-index: 99;
+    position: relative;
+}
+/* .page2 >div>p{
+    opacity: 0.4;
+    z-index: 1;
+} */
+.page2 .circle-wrap{
+    flex-shrink: 0;
+    width: 250px; height: 250px;
+    position: relative;
+    
+    transform: rotate(90deg) ;
+}
+.page2 .circle{
+    width:100%; height:100%;
+    transform-style: preserve-3d;
+    transition: .5s;
+}
+
+.page2 .circle >div{
+    border: 3px solid rgb(201, 201, 201);
+    width: 100%; height: 100%;
+    border-radius: 100%;
+    /* margin-left: -50%; */
+    z-index: 1;
+}
+
+.page2 .circle >p{
+    
+    background-color: rgb(201, 201, 201);
+    width: 30px; height: 30px;
+    border-radius: 35px;  
+    position: absolute;    
+    z-index: 2;
+    left: calc(50% - 13.5px) ; top: calc(50% - 13px);
+}
+.page2 .circle >p.active{
+    background-color: #5989A4  ;
+}
+.page2 .circle >p:nth-of-type(1){
+    transform:  rotate(0deg) translate(0px,-120px);
+}
+
+.page2 .circle >p:nth-of-type(2){
+    transform:  rotate(45deg) translate(0px,-120px); 
+}
+
+.page2 .circle >p:nth-of-type(3){
+    transform:  rotate(90deg) translate(0px,-120px);    
+}
+
+.page2 .circle >p:nth-of-type(4){
+    transform:  rotate(135deg) translate(0px,-120px);    
+}
+
+.page2 .circle >p:nth-of-type(5){
+    transform:  rotate(180deg) translate(0px,-120px);
+}
+.page2 .circle >p:nth-of-type(6){
+    transform:  rotate(225deg) translate(0px,-120px);
+}
+.page2 .circle >p:nth-of-type(7){
+    transform:  rotate(270deg) translate(0px,-120px);
+}
+.page2 .circle >p:nth-of-type(8){
+    transform:  rotate(315deg) translate(0px,-120px);
+}
+
+
+
+
+
+
+/* =========================================== */
+
+.page2 .region{    
+    flex-shrink: 0;
+    text-align: center;
+    height:420px; 
+    overflow: hidden;
+    margin-top: -55px;
+    margin-left: 25px;
+}
+
+
+.page2 .swiper-slide >b{
+    font-size: 90px;
+    font-family: 'Montserrat', sans-serif; 
+    opacity: 1;
+}
+.page2 .swiper-slide.small b{
+    font-size: 65px;
+}
+.page2 .swiper-slide-active b{
+    color: #5989A4 !important;
+}
+.page2 .swiper-wrapper{
+    opacity:1;
+    font-size:120px;
+}
+
+/* .page .swiper-slide{
+
+}
+.page2 .swiper-slide b{
+    font-size:60px !important;
+} */
+
+/* =========================================== */
+
+.page2 .exp{
+    width: 400px; 
+    margin: 0 0 0 100px;
+    overflow: hidden;
+}
+.page2 .exp > div{
+    transition:.5s;
+}
+.page2 .exp p.active{display: block;}
+.page2 .exp p{
+    width: 100%;
+    text-align: justify;
+    font-family: 'Archivo', sans-serif;
+    font-size: 18px;
+    display:none;
+}
+/* .page2 .exp .swiper-slide .active{display: block;} */
+/* ================================================== */
+
+.button{
+    background-color: rgb(199, 199, 199);
+    width: 50px; height: 50px;
+    border-radius: 100%;
+    margin-left: 90%;
+    margin-bottom: 50px;
+    margin-top: 60px;
+}
+.button>a{
+}
+.button>a>img{
+    padding: 13px;
+    width: 100%;
+}
+
+/* ======================================= */
+.imgs{
+    width: 100%; height: 500px;
+    overflow: hidden;
+    margin-top: 150px;
+}
+.imgs .area{
+    display: none;
+}
+.imgs .swiper-wrapper .swiper-slide{
+}
+
+.imgs .swiper-wrapper{
+    margin-right: 50px;
+    /* box-shadow: 8px 5px 5px rgb(136, 136, 136); */
+    border-radius: 50px;
+}
+.imgs .swiper-wrapper img{width:100%}
+/* .imgs .area p:nth-child(even){
+    margin-top: 50px;
+}
+
+.imgs .area.active{
+    display:block;
+} */
+
+/* =========scroll bar (under) ======================== */
+
+/* .scroll{
+    width: 500px; height: 3px;
+    background-color: rgb(151, 151, 151);
+    margin: 50px auto;
+    margin-bottom: 100px;
+    border-radius: 30px;
+    position: relative;
+}
+.scroll>p{
+    width:100px; height: 3px;
+    background-color: rgb(39, 39, 39);
+    border-radius: 30px;
+    position: absolute;
+    transform: translate(50%);
+} */
+.swiper-scrollbar .swiper-scrollbar-horizontal{
+    width:100%; height: 3px;
+    background-color: rgb(151, 151, 151);
+    margin: 50px auto;
+    margin-bottom: 100px;
+    border-radius: 30px;
+    position: absolute;
+    left: 1%; top: 1850px;
+}
+.swiper-scrollbar-drag{
+    width:100px; height: 3px;
+    background-color: rgb(39, 39, 39);
+    border-radius: 30px;
+    transform: translate(50%);
+}
+/* footer ==================================== */
+
